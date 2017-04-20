@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: okots
+  api_key: '153473987158718'
+  api_secret: YWMameCu97i1XXnvEbpdYu32Nl4
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: okots
+  api_key: '153473987158718'
+  api_secret: YWMameCu97i1XXnvEbpdYu32Nl4
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: okots
+  api_key: '153473987158718'
+  api_secret: YWMameCu97i1XXnvEbpdYu32Nl4
+  enhance_image_tag: true
+  static_image_support: false
