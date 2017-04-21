@@ -3,8 +3,14 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts ||= Post.order('created_at DESC').page params[:page]
+    #@posts ||= Post.order('created_at DESC').page params[:page]
     @post = Post.new
+    @posts = Post.all
+    if params[:search]
+      @posts = Post.search(params[:search]).order("created_at DESC").page params[:page]
+    else
+      @posts = Post.all.order('created_at DESC').page params[:page]
+    end
   end
 
   def show

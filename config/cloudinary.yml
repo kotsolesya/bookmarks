@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: okots
-  api_key: '153473987158718'
-  api_secret: YWMameCu97i1XXnvEbpdYu32Nl4
+  cloud_name: hisagtep6
+  api_key: '875288561886986'
+  api_secret: 2MD7_Jz3lq6FdmAz8MUz1vOwwWE
   enhance_image_tag: true
   static_image_support: false
 production:
-  cloud_name: okots
-  api_key: '153473987158718'
-  api_secret: YWMameCu97i1XXnvEbpdYu32Nl4
+  cloud_name: hisagtep6
+  api_key: '875288561886986'
+  api_secret: 2MD7_Jz3lq6FdmAz8MUz1vOwwWE
   enhance_image_tag: true
   static_image_support: true
 test:
-  cloud_name: okots
-  api_key: '153473987158718'
-  api_secret: YWMameCu97i1XXnvEbpdYu32Nl4
+  cloud_name: hisagtep6
+  api_key: '875288561886986'
+  api_secret: 2MD7_Jz3lq6FdmAz8MUz1vOwwWE
   enhance_image_tag: true
   static_image_support: false

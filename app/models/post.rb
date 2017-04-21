@@ -2,9 +2,13 @@ require 'uri'
 class Post < ApplicationRecord
   after_create :screenshot
   validates :url, :format => URI::regexp(%w(http https)), presence: true
-  paginates_per 4
+  paginates_per 3
 
   belongs_to :user
+
+  def self.search(search)
+      where('url LIKE ?', "%#{search}%")
+  end
 
   private
 

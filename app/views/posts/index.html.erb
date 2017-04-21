@@ -1,4 +1,8 @@
 <p id="notice"><%= notice %></p>
+<%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+  <%= submit_tag "Search" %>
+<% end %>
 
 <h1>Posts</h1>
 
@@ -11,7 +15,7 @@
     <%= render 'form' %>
   </div>
 </div>
-<center><%= paginate @posts, theme: 'twitter-bootstrap-4', pagination_class: "pagination-sm" %></center>
+<center><%= paginate @posts, theme: 'twitter-bootstrap-4',  pagination_class: "pagination-sm" %></center>
 <div id="post_holder">
   <% @posts.each do |post| %>
       <%= render 'row', post: post %>
