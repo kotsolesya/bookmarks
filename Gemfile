@@ -27,6 +27,7 @@ gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'webshot'
 
+gem 'phantomjs', :require => 'phantomjs/poltergeist'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
